@@ -10,7 +10,6 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.9.0+cu126-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![CUDA](https://img.shields.io/badge/GPU-NVIDIA%20Tesla%20T4-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <br/>
 
@@ -301,9 +300,9 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
   Purpose: seed buffer with competent + exploratory experience
 ```
 
-### Phase 1 — Main Training (3,000 episodes)
+### Phase 1 — Main Training (3,500 episodes)
 
-**Total gradient updates: 3,000 × 300 = 900,000**
+**Total gradient updates: 3,500 × 300 = 10,50,000**
 
 #### Learning Rate Schedule
 
@@ -314,7 +313,7 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
    800 – 1199   5e-4     Consolidation
    1200 – 1799  2e-4     Refinement
    1800 – 2499  5e-5     Fine-tuning
-   2500 – 3000  2e-5     Final polish  ← new in v10.3
+   2500 – 3500  2e-5     Final polish  ← new in v10.3
 ```
 
 #### Three Annealing Schedules Running in Parallel
@@ -327,7 +326,7 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
                               ep 1→400    flat
 
   β (IS correction)     0.40 ────────────────────► 1.00
-                              linear across all 3000 eps
+                              linear across all 3500 eps
 ```
 
 #### Composite Checkpoint Score *(FIX-1)*
@@ -346,7 +345,7 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 
 ```
   Episodes 1 – 1499    →  eval every 50 eps  (40 eval episodes each)
-  Episodes 1500 – 3000  →  eval every 25 eps  (50 eval episodes each)
+  Episodes 1500 – 3500  →  eval every 25 eps  (50 eval episodes each)
 ```
 
 ---
@@ -376,7 +375,7 @@ Tested on **out-of-distribution** arrival rates — never seen during training (
 
 > Avg wait per eval episode vs all 4 baselines. LR step-down points shown as vertical lines.
 
-![Training Convergence](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig1_convergence.png?raw=true)
+![Training Convergence](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Training_Convergence.png?raw=true)
 
 The smoothed curve crosses below ETA-Dispatch (0.673) around **episode 150** and continues improving through all four LR stages. Best composite checkpoint captured at **ep 2,075** (wait=0.51, score=1.347).
 
@@ -386,7 +385,7 @@ The smoothed curve crosses below ETA-Dispatch (0.673) around **episode 150** and
 
 > The joint optimisation score (1.0×wait + 0.4×energy + 0.3×cluster, normalised by ETA) — the v10.3 FIX-1 replacement for single-metric checkpointing.
 
-![Composite Score](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig2_composite_score.png?raw=true)
+![Composite Score](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Composite_Checkpoint.png?raw=true)
 
 Reference line at **1.70** = all metrics equal to ETA. Best checkpoint (ep 2,075, score=**1.347**) sits 19% below this line — jointly 19%+ better than ETA on all three dimensions simultaneously.
 
@@ -396,7 +395,7 @@ Reference line at **1.70** = all metrics equal to ETA. Best checkpoint (ep 2,075
 
 > Bar chart: average passenger wait time across all five methods.
 
-![Wait Time Comparison](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig3_wait.png?raw=true)
+![Wait Time Comparison](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Avg_Wait_Time.png?raw=true)
 
 QR-DQN CTDE: **0.492** — **27% below** ETA-Dispatch (0.673) and **94.9% below** Nearest Car (9.679).
 
@@ -406,7 +405,7 @@ QR-DQN CTDE: **0.492** — **27% below** ETA-Dispatch (0.673) and **94.9% below*
 
 > Total motor-steps per episode — physical movement cost.
 
-![Energy Consumption](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig4_energy.png?raw=true)
+![Energy Consumption](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Energy_Consumption.png?raw=true)
 
 QR-DQN uses **427.2** motor-steps vs ETA's **472.7** — **9.6% fewer movements**. SCAN/LOOK worst at 899.6 (sweeps empty building halves). Nearest Car lowest energy (409.8) but serves the fewest passengers.
 
@@ -416,7 +415,7 @@ QR-DQN uses **427.2** motor-steps vs ETA's **472.7** — **9.6% fewer movements*
 
 > Three-panel: wait time, energy, and cluster rate all evolving over 3,000 episodes.
 
-![Training Dynamics](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig5_training_dynamics.png?raw=true)
+![Training Dynamics](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Training_Dynamics.png?raw=true)
 
 **Panel 1 (Wait):** 0.78 (ep50) → below ETA by ep150 → 0.49 at best checkpoint.
 **Panel 2 (Energy):** Gradually falls 520 → 427 as the policy learns smarter positioning.
@@ -428,39 +427,29 @@ QR-DQN uses **427.2** motor-steps vs ETA's **472.7** — **9.6% fewer movements*
 
 > Elevator distribution quality — how often they bunch vs how well they spread.
 
-![Cluster and Spread](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig6_cluster_spread.png?raw=true)
+![Cluster and Spread](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Elevator_Spatial_Distribution.png?raw=true)
 
 Spread rises from near-zero to **0.306** — exceeding ETA-Dispatch (0.297). The agent learns emergent spatial self-organisation entirely through the approach-cluster penalty and responsibility reward.
 
 ---
 
-### Figure 7 — Multi-Metric Radar Chart
-
-> All five performance dimensions on one normalised radar. Outer edge = better on each axis.
-
-![Radar Chart](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig7_radar.png?raw=true)
-
-QR-DQN CTDE is the **outermost polygon** on the radar — the only method simultaneously competitive on all five axes. ETA-Dispatch is second but visibly smaller across every dimension.
-
----
-
-### Figure 8 — Stress Test Generalisation
+### Figure 7 — Stress Test Generalisation
 
 > Three out-of-distribution scenarios: Rush Hour (λ=0.35), Peak Load (λ=0.55), Extreme Surge (λ=0.85).
 
-![Stress Tests](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig8_stress.png?raw=true)
+![Stress Tests](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Stress_Tests.png?raw=true)
 
 At **λ=0.85** (2.4× training max), the policy degrades proportionally — wait rises to 2.02 but cluster stays at 20% and spread at 0.266. No catastrophic collapse — strong out-of-distribution generalisation.
 
 ---
 
-### Figure 9 — Actor Loss Trajectory
+### Figure 8 — Actor Loss Trajectory
 
 > QR-DQN actor loss over 3,000 episodes — confirming stable, monotonic convergence.
 
-![Actor Loss](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/elevator_qrdqn_n3_seed42_fig9_actor_loss.png?raw=true)
+![Actor Loss](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Actor_Loss.png?raw=true)
 
-Loss falls from **~1.10** (ep50) to **~0.63** (ep3000) with no divergence. Each LR step produces a brief uptick (expected — the network is momentarily surprised) followed by renewed descent. A hallmark of healthy staged training.
+Loss falls from **~1.10** (ep50) to **~0.63** (ep3500) with no divergence. Each LR step produces a brief uptick (expected — the network is momentarily surprised) followed by renewed descent. A hallmark of healthy staged training.
 
 ---
 
@@ -473,15 +462,14 @@ multi-elevator-ctde-qrdqn-dispatch/
 ├── 📄 README.md                                    ← This file
 │
 ├── 📂 Results_Diagrams/                            ← 9 publication-quality figures (PNG + PDF, 400 DPI)
-│   ├── elevator_qrdqn_n3_seed42_fig1_convergence.png
-│   ├── elevator_qrdqn_n3_seed42_fig2_composite_score.png
-│   ├── elevator_qrdqn_n3_seed42_fig3_wait.png
-│   ├── elevator_qrdqn_n3_seed42_fig4_energy.png
-│   ├── elevator_qrdqn_n3_seed42_fig5_training_dynamics.png
-│   ├── elevator_qrdqn_n3_seed42_fig6_cluster_spread.png
-│   ├── elevator_qrdqn_n3_seed42_fig7_radar.png
-│   ├── elevator_qrdqn_n3_seed42_fig8_stress.png
-│   └── elevator_qrdqn_n3_seed42_fig9_actor_loss.png
+│   ├── Training_Convergence.png
+│   ├── Composite_Checkpoint.png
+│   ├── Avg_Wait_Time.png
+│   ├── Energy_Consumption.png
+│   ├── Training_Dynamics.png
+│   ├── Elevator_Spatial_Distribution.png
+│   ├── Stress_Tests.png
+│   └── Actor_Loss.png
 │
 └── 📂 UML Diagrams/                               ← Complete system design documentation
     ├── Multi_Elevator_Sys.svg                      ← Full 4-layer system architecture
@@ -545,7 +533,7 @@ Four targeted changes over v10.2, each fixing a specific failure mode identified
 
 ---
 
-### FIX-2 — Extended to 3,000 Episodes
+### FIX-2 — Extended to 3,500 Episodes
 
 **Problem:** v10.2 actor loss was still at 0.498 and falling at ep2500. Best policy was still emerging.
 
@@ -573,12 +561,12 @@ Four targeted changes over v10.2, each fixing a specific failure mode identified
 
 ---
 
-### 🔥 Built from scratch · PyTorch 2.9 · NVIDIA Tesla T4 · 900,000 gradient updates
+### 🔥 Built from scratch · PyTorch 2.9 · NVIDIA Tesla T4 · 10,50,000 gradient updates
 
 **[⭐ Star this repo](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch) if you found it useful!**
 
 ---
 
-*© 2024 Kumar Piyush Raj · [GitHub @kumarpiyushraj](https://github.com/kumarpiyushraj) · MIT License*
+*© 2026 Kumar Piyush Raj · [GitHub @kumarpiyushraj](https://github.com/kumarpiyushraj)*
 
 </div>
