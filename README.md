@@ -11,15 +11,15 @@
 
 <br/>
 
-> **3 elevators · 10 floors · 3,000 episodes · 900,000 gradient updates**
+> **3 elevators · 10 floors · 3,500 episodes · 1,050,000 gradient updates**
 >
-> One policy that beats the best classical algorithm by **−27% wait time** and **−9.6% energy** — *simultaneously.*
+> One policy that beats the best classical algorithm by **-27% wait time** and **-9.6% energy** — *simultaneously.*
 
 <br/>
 
 | 🏢 Elevators | 🏗️ Floors | 📦 Episodes | ⚡ Grad Updates | 🎯 vs ETA Wait | 🔋 vs ETA Energy |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **3** | **10** | **3,000** | **900K** | **−27.0%** | **−9.6%** |
+| **3** | **10** | **3,500** | **100K** | **−27.0%** | **−9.6%** |
 
 </div>
 
@@ -71,7 +71,7 @@ Three ideas combine into one system:
 > **The emergent result:** Elevators self-organise — spreading across the building, avoiding bunching, gravitating toward high-demand floors — with **zero hard-coded coordination rules.**
 
 > **Version:** `v10.3` · **Hardware:** Kaggle NVIDIA Tesla T4 · CUDA · PyTorch `2.9.0+cu126`
-> **Scale:** 3,000 episodes × 300 steps × 3 elevators = **2,700,000 experience pushes** · **900,000 gradient updates**
+> **Scale:** 3,500 episodes × 300 steps × 3 elevators = **3,150,000 experience pushes** · **1,050,000 gradient updates**
 
 ---
 
