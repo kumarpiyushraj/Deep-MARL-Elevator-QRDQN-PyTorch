@@ -19,7 +19,7 @@
 
 | 🏢 Elevators | 🏗️ Floors | 📦 Episodes | ⚡ Grad Updates | 🎯 vs ETA Wait | 🔋 vs ETA Energy |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **3** | **10** | **3,500** | **100K** | **-27.0%** | **-9.6%** |
+| **3** | **10** | **3,500** | **1,050,000** | **-27.0%** | **-9.6%** |
 
 </div>
 
@@ -27,24 +27,24 @@
 
 ## 📋 Table of Contents
 
-| | Section |
+| # | Section |
 |:---:|:---|
-| [01](#-overview) | Overview — Three ideas, one system |
-| [02](#-key-results) | Key Results — Head-to-head vs all baselines |
-| [03](#-system-architecture) | System Architecture — UML diagrams |
-| [04](#-agent-architecture) | Agent Architecture — Class diagram & network layout |
-| [05](#-training-sequence--decision-flow) | Training Sequence & Decision Flow |
-| [06](#-use-cases) | Use Cases — Actor responsibilities |
-| [07](#-environment) | Environment — Building config & observation space |
-| [08](#-reward-design) | Reward Design — Decomposed per-agent rewards |
-| [09](#-baseline-policies) | Baseline Policies |
-| [10](#-training-pipeline) | Training Pipeline — LR schedule & composite scoring |
-| [11](#-stress-test-results) | Stress Test Results — OOD generalisation |
-| [12](#-result-figures) | Result Figures — All 8 plots explained |
-| [13](#-project-structure) | Project Structure |
-| [14](#-how-to-run) | How to Run |
-| [15](#-dependencies) | Dependencies |
-| [16](#-design-decisions--v103-fixes) | Design Decisions — v10.3 Fixes |
+| 01 | [Overview — Three ideas, one system](#-overview) |
+| 02 | [Key Results — Head-to-head vs all baselines](#-key-results) |
+| 03 | [System Architecture — UML diagrams](#-system-architecture) |
+| 04 | [Agent Architecture — Class diagram & network layout](#-agent-architecture) |
+| 05 | [Training Sequence & Decision Flow](#-training-sequence--decision-flow) |
+| 06 | [Use Cases — Actor responsibilities](#-use-cases) |
+| 07 | [Environment — Building config & observation space](#-environment) |
+| 08 | [Reward Design — Decomposed per-agent rewards](#-reward-design) |
+| 09 | [Baseline Policies](#-baseline-policies) |
+| 10 | [Training Pipeline — LR schedule & composite scoring](#-training-pipeline) |
+| 11 | [Stress Test Results — OOD generalisation](#-stress-test-results) |
+| 12 | [Result Figures — All 8 plots explained](#-result-figures) |
+| 13 | [Project Structure](#-project-structure) |
+| 14 | [How to Run](#-how-to-run) |
+| 15 | [Dependencies](#-dependencies) |
+| 16 | [Design Decisions — v10.3 Fixes](#-design-decisions--v103-fixes) |
 
 ---
 
@@ -70,7 +70,7 @@ Three ideas combine into one system:
 
 > **The emergent result:** Elevators self-organise — spreading across the building, avoiding bunching, gravitating toward high-demand floors — with **zero hard-coded coordination rules.**
 
-> **Version:** `v10.3` · **Hardware:** Kaggle NVIDIA Tesla T4 · CUDA · PyTorch `2.9.0+cu126`
+> **Version:** `v10.3` · **Hardware:** Kaggle NVIDIA Tesla T4 · CUDA · PyTorch `2.9.0+cu126`  
 > **Scale:** 3,500 episodes × 300 steps × 3 elevators = **3,150,000 experience pushes** · **1,050,000 gradient updates**
 
 ---
@@ -95,20 +95,20 @@ Three ideas combine into one system:
 
 ### 🎯 Head-to-Head vs ETA-Dispatch
 
-```
-╔══════════════════════════════════════════════════════════════════════════╗
-║                                                                          ║
-║   Metric         Ours    vs   ETA      Delta      Verdict               ║
-║   ──────────────────────────────────────────────────────────────────    ║
-║   Avg Wait       0.492   vs   0.673   → −27.0%    ✅  BETTER           ║
-║   Energy         427.2   vs   472.7   →  −9.6%    ✅  BETTER           ║
-║   Cluster Rate   10.0%   vs   10.2%   →  −1.6pp   ✅  BETTER           ║
-║   Spread Index   0.306   vs   0.297   →  +3.0%    ✅  BETTER           ║
-║                                                                          ║
-║   ► All 4 metrics beat ETA simultaneously                               ║
-║     (required all 4 v10.3 targeted fixes to achieve)                   ║
-╚══════════════════════════════════════════════════════════════════════════╝
-```
+<div align="center">
+
+| Metric | Ours | vs | ETA | Delta | Verdict |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| Avg Wait | **0.492** | vs | 0.673 | −27.0% | ✅ BETTER |
+| Energy | **427.2** | vs | 472.7 | −9.6% | ✅ BETTER |
+| Cluster Rate | **10.0%** | vs | 10.2% | −1.6pp | ✅ BETTER |
+| Spread Index | **0.306** | vs | 0.297 | +3.0% | ✅ BETTER |
+
+</div>
+
+> ► All 4 metrics beat ETA simultaneously — required all 4 v10.3 targeted fixes to achieve.
+
+<br/>
 
 > **The critical insight:** Beating ETA on *wait alone* is easy — move more. Beating it on *energy alone* is easy — move less. Beating it on **both simultaneously** required learning a fundamentally smarter positioning strategy. That's what CTDE + QR-DQN enables.
 
@@ -262,23 +262,21 @@ CentralisedCritic (training only — discarded at execution)
 
 ### Traffic Modes
 
-```
-  50%  normal      →  Standard Poisson arrivals at all floors
-  25%  up_peak     →  Lobby weight ×2    (morning rush — everyone going up)
-  25%  down_peak   →  Upper floors ×1.8  (evening rush — everyone coming down)
-```
+| Mode | Weight | Description |
+|:---|:---:|:---|
+| `normal` | 50% | Standard Poisson arrivals at all floors |
+| `up_peak` | 25% | Lobby weight ×2 — morning rush, everyone going up |
+| `down_peak` | 25% | Upper floors ×1.8 — evening rush, everyone coming down |
 
 ### Observation Space — 18 Dimensions
 
-```
-  Index    Dim   Content
-  ───────  ────  ──────────────────────────────────────────────────────
-   [0]      1    Own floor position          (normalised: floor / 9)
-   [1–10]  10    hall[0] … hall[9] / 5.0    (queue depth, clipped 0–1)
-   [11–12]  2    Peer elevator positions     (normalised)
-   [13–14]  2    Peer elevator targets       (normalised; −0.1 = idle)
-   [15–17]  3    One-hot elevator identity   ([1,0,0], [0,1,0], [0,0,1])
-```
+| Index | Dim | Content |
+|:---|:---:|:---|
+| `[0]` | 1 | Own floor position (normalised: `floor / 9`) |
+| `[1–10]` | 10 | `hall[0] … hall[9] / 5.0` — queue depth, clipped 0–1 |
+| `[11–12]` | 2 | Peer elevator positions (normalised) |
+| `[13–14]` | 2 | Peer elevator targets (normalised; `−0.1` = idle) |
+| `[15–17]` | 3 | One-hot elevator identity (`[1,0,0]`, `[0,1,0]`, `[0,0,1]`) |
 
 ### Step Sequence — One Clock Tick
 
@@ -358,28 +356,21 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
 
 #### Learning Rate Schedule
 
-```
-  Episodes         LR         Purpose
-  ─────────────   ─────────   ───────────────────────────────────────
-  Ep    1 – 799    1e-3       Fast initial learning
-  Ep  800 – 1199   5e-4       Consolidation
-  Ep 1200 – 1799   2e-4       Refinement
-  Ep 1800 – 2499   5e-5       Fine-tuning
-  Ep 2500 – 3500   2e-5       Final polish  ← new in v10.3
-```
+| Episodes | LR | Purpose |
+|:---|:---:|:---|
+| Ep 1 – 799 | `1e-3` | Fast initial learning |
+| Ep 800 – 1199 | `5e-4` | Consolidation |
+| Ep 1200 – 1799 | `2e-4` | Refinement |
+| Ep 1800 – 2499 | `5e-5` | Fine-tuning |
+| Ep 2500 – 3500 | `2e-5` | Final polish *(new in v10.3)* |
 
 #### Three Annealing Schedules Running in Parallel
 
-```
-  ε (exploration)       0.25 ──────────────► 0.05 ── 0.05
-                              ep 1 → 1000          flat
-
-  critic_α (blend)      0.00 ──► 0.25 ────────────── 0.25
-                              ep 1 → 400      flat
-
-  β (IS correction)     0.40 ────────────────────────► 1.00
-                              linear across all 3,500 episodes
-```
+| Schedule | Start | End | Notes |
+|:---|:---:|:---:|:---|
+| ε (exploration) | `0.25` | `0.05` | Anneals ep 1→1000, then flat |
+| critic_α (blend) | `0.00` | `0.25` | Ramps ep 1→400, then flat |
+| β (IS correction) | `0.40` | `1.00` | Linear across all 3,500 episodes |
 
 #### Composite Checkpoint Score *(FIX-1)*
 
@@ -395,10 +386,10 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 
 #### Evaluation Cadence *(FIX-4)*
 
-```
-  Episodes    1 – 1499   →  eval every 50 eps  (40 eval episodes each)
-  Episodes 1500 – 3500   →  eval every 25 eps  (50 eval episodes each)
-```
+| Episode Range | Frequency | Episodes per Eval |
+|:---|:---:|:---:|
+| Ep 1 – 1499 | Every 50 eps | 40 |
+| Ep 1500 – 3500 | Every 25 eps | 50 |
 
 ---
 
@@ -456,8 +447,8 @@ Tested on **out-of-distribution** arrival rates — never seen during training (
 <img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Training_Dynamics.png?raw=true" alt="Training Dynamics" width="90%"/>
 </div>
 
-> **Panel 1 (Wait):** 0.78 (ep 50) → below ETA by ep 150 → 0.49 at best checkpoint.
-> **Panel 2 (Energy):** Gradually falls 520 → 427 as the policy learns smarter positioning.
+> **Panel 1 (Wait):** 0.78 (ep 50) → below ETA by ep 150 → 0.49 at best checkpoint.  
+> **Panel 2 (Energy):** Gradually falls 520 → 427 as the policy learns smarter positioning.  
 > **Panel 3 (Cluster):** Drops sharply 52% → ~10% by ep 1,500. Stronger penalty (FIX-3: 1.5→2.5) prevents the v10.2 oscillation in the final 500 episodes.
 
 ---
