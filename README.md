@@ -1,28 +1,32 @@
+<!---------------------------------------------------------------------------->
+<!--  HERO BANNER                                                            -->
+<!---------------------------------------------------------------------------->
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0a1628,60:0f2d52,100:00b4d8&height=240&section=header&text=Multi-Elevator%20Dispatch&fontSize=42&fontColor=e0f7ff&fontAlignY=42&fontStyle=bold&desc=CTDE%20%2B%20QR-DQN%20%E2%80%94%20Teaching%20three%20elevators%20to%20think%20together%2C%20act%20alone&descAlignY=63&descSize=15&descColor=7dd3fc&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,25:071428,55:0c2347,100:00b4d8&height=260&section=header&text=Multi-Elevator%20Dispatch&fontSize=46&fontColor=e0f7ff&fontAlignY=40&fontStyle=bold&desc=CTDE%20%2B%20QR-DQN%20%E2%80%94%20Teaching%20three%20elevators%20to%20think%20together%2C%20act%20alone&descAlignY=60&descSize=16&descColor=7dd3fc&animation=fadeIn" width="100%"/>
 
 <br/>
 
+<!-- BADGES -->
 <p>
-  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.12-0d2137?style=for-the-badge&logo=python&logoColor=7dd3fc&labelColor=0a1628" alt="Python"/></a>&nbsp;
-  <a href="https://pytorch.org"><img src="https://img.shields.io/badge/PyTorch-2.9.0+cu126-0d2137?style=for-the-badge&logo=pytorch&logoColor=f87171&labelColor=0a1628" alt="PyTorch"/></a>&nbsp;
-  <a href="https://developer.nvidia.com/cuda-zone"><img src="https://img.shields.io/badge/GPU-Tesla%20T4-0d2137?style=for-the-badge&logo=nvidia&logoColor=4ade80&labelColor=0a1628" alt="CUDA"/></a>&nbsp;
-  <a href="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Multi_Elevator_CTDE.ipynb"><img src="https://img.shields.io/badge/📓_Notebook-Open%20on%20GitHub-0d2137?style=for-the-badge&logo=github&logoColor=e2e8f0&labelColor=0a1628" alt="Notebook"/></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.12-0a1628?style=for-the-badge&logo=python&logoColor=7dd3fc&labelColor=071020&color=0d1f38" alt="Python"/></a>&nbsp;
+  <a href="https://pytorch.org"><img src="https://img.shields.io/badge/PyTorch-2.9.0+cu126-0a1628?style=for-the-badge&logo=pytorch&logoColor=fb923c&labelColor=071020&color=0d1f38" alt="PyTorch"/></a>&nbsp;
+  <a href="https://developer.nvidia.com/cuda-zone"><img src="https://img.shields.io/badge/CUDA-Tesla%20T4-0a1628?style=for-the-badge&logo=nvidia&logoColor=4ade80&labelColor=071020&color=0d1f38" alt="CUDA"/></a>&nbsp;
+  <a href="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Multi_Elevator_CTDE.ipynb"><img src="https://img.shields.io/badge/📓%20Notebook-Open%20on%20GitHub-0a1628?style=for-the-badge&logo=github&logoColor=e2e8f0&labelColor=071020&color=0d1f38" alt="Notebook"/></a>
 </p>
 
 <br/>
 
-```
-  3 elevators · 10 floors · 3,500 episodes · 1,050,000 gradient updates
+<!-- HERO QUOTE — rendered as a capsule-render image so it stays centered -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0f2340&height=90&text=3%20elevators%20%C2%B7%2010%20floors%20%C2%B7%203%2C500%20episodes%20%C2%B7%201%2C050%2C000%20gradient%20updates&fontSize=15&fontColor=94a3b8&fontAlignY=35&desc=One%20policy%20that%20beats%20the%20best%20classical%20algorithm%20by%20%E2%88%9227%25%20wait%20time%20and%20%E2%88%929.6%25%20energy%20%E2%80%94%20simultaneously&descSize=14&descColor=e0f7ff&descAlignY=68" width="88%"/>
 
-  One policy that beats the best classical algorithm
-  by  −27% wait time  and  −9.6% energy  —  simultaneously.
-```
+<br/><br/>
 
-<br/>
+<!-- HERO STATS TABLE -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=34&text=AT%20A%20GLANCE&fontSize=11&fontColor=475569&fontAlignY=65" width="68%"/>
 
-| 🏢 Elevators | 🏗️ Floors | 📦 Episodes | ⚡ Grad Updates | 🎯 vs ETA Wait | 🔋 vs ETA Energy |
+| 🏢 Elevators | 🏗️ Floors | 📦 Episodes | ⚡ Grad Updates | 🎯 Wait Δ | 🔋 Energy Δ |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | **3** | **10** | **3,500** | **1,050,000** | **`−27.0%`** | **`−9.6%`** |
 
@@ -31,31 +35,27 @@
 <br/><br/>
 
 <!---------------------------------------------------------------------------->
-<!--  NAV                                                                     -->
+<!--  TABLE OF CONTENTS                                                       -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0f2d52&height=52&text=📋%20Table%20of%20Contents&fontSize=20&fontColor=e0f7ff&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0f2d52&height=54&text=📋%20%20Table%20of%20Contents&fontSize=20&fontColor=e0f7ff&fontAlignY=65" width="100%"/>
 
 <br/>
 
-| # | Section |
-|:---:|:---|
-| 01 | [✨ Overview](#-overview) |
-| 02 | [🏆 Key Results](#-key-results) |
-| 03 | [📐 System Architecture](#-system-architecture) |
-| 04 | [🧠 Agent Architecture](#-agent-architecture) |
-| 05 | [🔁 Training Sequence & Decision Flow](#-training-sequence--decision-flow) |
-| 06 | [🎭 Use Cases](#-use-cases) |
-| 07 | [🏗️ Environment](#-environment) |
-| 08 | [🎯 Reward Design](#-reward-design) |
-| 09 | [📏 Baseline Policies](#-baseline-policies) |
-| 10 | [🔄 Training Pipeline](#-training-pipeline) |
-| 11 | [🔥 Stress Test Results](#-stress-test-results) |
-| 12 | [📊 Result Figures](#-result-figures) |
-| 13 | [📁 Project Structure](#-project-structure) |
-| 14 | [🚀 How to Run](#-how-to-run) |
-| 15 | [📦 Dependencies](#-dependencies) |
-| 16 | [🔬 Design Decisions — v10.3 Fixes](#-design-decisions--v103-fixes) |
+<div align="center">
+
+| # | Section | # | Section |
+|:---:|:---|:---:|:---|
+| 01 | [✨ Overview](#-overview) | 09 | [📏 Baseline Policies](#-baseline-policies) |
+| 02 | [🏆 Key Results](#-key-results) | 10 | [🔄 Training Pipeline](#-training-pipeline) |
+| 03 | [📐 System Architecture](#-system-architecture) | 11 | [🔥 Stress Test Results](#-stress-test-results) |
+| 04 | [🧠 Agent Architecture](#-agent-architecture) | 12 | [📊 Result Figures](#-result-figures) |
+| 05 | [🔁 Training Sequence & Flow](#-training-sequence--decision-flow) | 13 | [📁 Project Structure](#-project-structure) |
+| 06 | [🎭 Use Cases](#-use-cases) | 14 | [🚀 How to Run](#-how-to-run) |
+| 07 | [🏗️ Environment](#-environment) | 15 | [📦 Dependencies](#-dependencies) |
+| 08 | [🎯 Reward Design](#-reward-design) | 16 | [🔬 v10.3 Design Decisions](#-design-decisions--v103-fixes) |
+
+</div>
 
 <br/><br/>
 
@@ -63,13 +63,15 @@
 <!--  OVERVIEW                                                                -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:062030,100:0a3550&height=52&text=✨%20Overview&fontSize=20&fontColor=7dd3fc&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:062030,100:0a3550&height=54&text=✨%20%20Overview&fontSize=20&fontColor=7dd3fc&fontAlignY=65" width="100%"/>
 
 <br/>
 
-This project solves the **Multi-Elevator Group Control Problem** — a classic operations research challenge where multiple elevators must coordinate to serve passengers efficiently **without any explicit real-time communication** between them.
+This project solves the **Multi-Elevator Group Control Problem** — a classic operations-research challenge where multiple elevators must coordinate to serve passengers efficiently **without any real-time communication** between them.
 
-Three ideas combine into one system:
+<br/>
+
+**Three ideas. One system. Emergent coordination.**
 
 <br/>
 
@@ -77,9 +79,9 @@ Three ideas combine into one system:
 
 | &nbsp; | Idea | What It Solves |
 |:---:|:---|:---|
-| 🧠 | **CTDE** — Centralised Training, Decentralised Execution | Trains with a global building view; runs with only local sensor data per elevator |
-| 📊 | **QR-DQN** — Quantile Regression Deep Q-Network | Models full *distributions* of returns (not just expectations) for robust learning under multi-agent uncertainty |
-| ⚡ | **Dueling Net + Prioritised Replay** | Separates state value from action advantage; focuses gradient updates on the most surprising transitions |
+| 🧠 | **CTDE** — Centralised Training, Decentralised Execution | Trains with a global building view; executes with only local sensor data per elevator |
+| 📊 | **QR-DQN** — Quantile Regression Deep Q-Network | Models full *distributions* of returns — not just expectations — for robust multi-agent learning |
+| ⚡ | **Dueling Net + Prioritised Replay** | Separates state value from action advantage; focuses updates on the most surprising transitions |
 
 </div>
 
@@ -87,8 +89,15 @@ Three ideas combine into one system:
 
 > **The emergent result:** Elevators self-organise — spreading across the building, avoiding bunching, gravitating toward high-demand floors — **with zero hard-coded coordination rules.**
 
-> **Version:** `v10.3` &nbsp;·&nbsp; **Hardware:** Kaggle NVIDIA Tesla T4 · CUDA · PyTorch `2.9.0+cu126`
-> **Scale:** 3,500 episodes × 300 steps × 3 elevators = **3,150,000 experience pushes · 1,050,000 gradient updates**
+<br/>
+
+<div align="center">
+
+| 🔧 Version | 🖥️ Hardware | 🧮 Framework | 📈 Scale |
+|:---:|:---:|:---:|:---|
+| `v10.3` | Kaggle NVIDIA Tesla T4 | PyTorch `2.9.0+cu126` | 3,500 ep × 300 steps × 3 elevators = **3,150,000 pushes · 1,050,000 updates** |
+
+</div>
 
 <br/><br/>
 
@@ -96,13 +105,15 @@ Three ideas combine into one system:
 <!--  KEY RESULTS                                                             -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1200,100:3d2800&height=52&text=🏆%20Key%20Results&fontSize=20&fontColor=fbbf24&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1200,100:3d2800&height=54&text=🏆%20%20Key%20Results&fontSize=20&fontColor=fbbf24&fontAlignY=65" width="100%"/>
 
 <br/>
 
 > Evaluated over **60 episodes** after restoring the best composite checkpoint. Seed `42`.
 
-### Full Comparison — All Methods
+<br/>
+
+### All Methods — Head-to-Head
 
 <div align="center">
 
@@ -118,24 +129,24 @@ Three ideas combine into one system:
 
 <br/>
 
-### 🎯 Head-to-Head vs ETA-Dispatch
+### 🎯 Scorecard vs ETA-Dispatch *(primary benchmark)*
 
 <div align="center">
 
-| Metric | 🥇 Ours | vs | ETA | Δ Delta | Verdict |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Avg Wait | **`0.492`** | vs | 0.673 | **−27.0%** | ✅ BETTER |
-| Energy | **`427.2`** | vs | 472.7 | **−9.6%** | ✅ BETTER |
-| Cluster Rate | **`10.0%`** | vs | 10.2% | **−1.6pp** | ✅ BETTER |
-| Spread Index | **`0.306`** | vs | 0.297 | **+3.0%** | ✅ BETTER |
+| Metric | 🥇 Ours | ETA | Delta | Verdict |
+|:---|:---:|:---:|:---:|:---:|
+| Avg Wait | **`0.492`** | 0.673 | **−27.0%** | ✅ BETTER |
+| Energy | **`427.2`** | 472.7 | **−9.6%** | ✅ BETTER |
+| Cluster Rate | **`10.0%`** | 10.2% | **−1.6pp** | ✅ BETTER |
+| Spread Index | **`0.306`** | 0.297 | **+3.0%** | ✅ BETTER |
 
 </div>
 
 <br/>
 
 > ► All 4 metrics beat ETA **simultaneously** — required all 4 v10.3 targeted fixes to achieve.
-
-> **The critical insight:** Beating ETA on *wait alone* is easy — move more. Beating it on *energy alone* is easy — move less. Beating it on **both simultaneously** required learning a fundamentally smarter positioning strategy. That's what CTDE + QR-DQN enables.
+>
+> **The critical insight:** Beating ETA on *wait alone* is easy — move more. Beating it on *energy alone* is easy — move less. Beating both **simultaneously** required learning a fundamentally smarter positioning strategy. That's what CTDE + QR-DQN enables.
 
 <br/><br/>
 
@@ -143,18 +154,18 @@ Three ideas combine into one system:
 <!--  SYSTEM ARCHITECTURE                                                     -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0a2e,100:1e1060&height=52&text=📐%20System%20Architecture&fontSize=20&fontColor=a5b4fc&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0a2e,100:1e1060&height=54&text=📐%20%20System%20Architecture&fontSize=20&fontColor=a5b4fc&fontAlignY=65" width="100%"/>
 
 <br/>
 
-The full system spans four layers: traffic generation → environment simulation → the learning agent → evaluation & reporting. The diagram below shows how all components connect — from Poisson passenger arrivals through the reward engine, into the QR-DQN actor and centralised critic, and out to the evaluation and reporting layer.
+The full system spans **four layers**: traffic generation → environment simulation → the learning agent → evaluation & reporting. Every component connects — from Poisson passenger arrivals through the reward engine, into the QR-DQN actor and centralised critic, and out to the reporting layer.
 
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=SYSTEM%20ARCHITECTURE%20DIAGRAM&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="96%"/>
-<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Sys.svg?raw=true" alt="System Architecture" width="96%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d3a5c,100:0a2540&height=6&text=&fontSize=1" width="96%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20SYSTEM%20ARCHITECTURE%20DIAGRAM%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="96%"/>
+<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Sys.svg?raw=true" alt="System Architecture Diagram" width="96%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e1060,100:0d0a2e&height=6&text=%20&fontSize=1" width="96%"/>
 </div>
 
 <br/>
@@ -163,7 +174,7 @@ The full system spans four layers: traffic generation → environment simulation
 
 | Layer | Components | Role |
 |:---|:---|:---|
-| 🔵 **User & Sensor** | Poisson Arrivals · Traffic Modes | Generates λ ∈ [0.12–0.35] passengers per floor per step across 3 traffic modes |
+| 🔵 **User & Sensor** | Poisson Arrivals · Traffic Modes | Generates λ ∈ [0.12–0.35] passengers/floor/step across 3 traffic modes |
 | 🟣 **Control & Scheduling** | Hall Queue · EMA Responsibility · Reward Engine | Simulates 10-floor, 3-elevator building; computes decomposed rewards |
 | 🟢 **Learning & Decision** | QR-Dueling Actor · Centralised Critic · PER Buffer · Baselines | All neural network components + classical comparison agents |
 | 🟡 **Evaluation & Reporting** | Greedy Eval · Metrics · 9 Figures | 30–60 episode evaluations, composite checkpoint scoring, output generation |
@@ -174,18 +185,18 @@ The full system spans four layers: traffic generation → environment simulation
 <!--  AGENT ARCHITECTURE                                                      -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:150a2e,100:2e1060&height=52&text=🧠%20Agent%20Architecture&fontSize=20&fontColor=c4b5fd&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:150a2e,100:2e1060&height=54&text=🧠%20%20Agent%20Architecture&fontSize=20&fontColor=c4b5fd&fontAlignY=65" width="100%"/>
 
 <br/>
 
-The class diagram shows the complete object model — every class, its attributes, its methods, and how they relate.
+The class diagram shows the **complete object model** — every class, its attributes, its methods, and how they relate.
 
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=CLASS%20DIAGRAM&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="96%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20CLASS%20DIAGRAM%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="96%"/>
 <img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Class.svg?raw=true" alt="Class Diagram" width="96%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3d1060,100:1e0a40&height=6&text=&fontSize=1" width="96%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2e1060,100:150a2e&height=6&text=%20&fontSize=1" width="96%"/>
 </div>
 
 <br/>
@@ -193,25 +204,22 @@ The class diagram shows the complete object model — every class, its attribute
 **Key relationships:**
 
 - **`CTDEQRDQNAgent`** owns two `QRDuelingNet` instances (live `actor` + slowly-updated `target_actor`, τ=0.002), two `CentralisedCritic` instances (training only — discarded at inference), and one `PrioritizedReplayBuffer` (capacity 200k, α=0.6)
-- **`MultiElevatorEnv`** sends `obs[n, 18]` and `rewards[n]` to the agent, receives `actions[n]` back
+- **`MultiElevatorEnv`** sends `obs[n, 18]` and `rewards[n]` to the agent; receives `actions[n]` back
 - **`EvaluatorLogger`** orchestrates evaluation without owning any component
 - **`BaselinePolicy`** extends the agent in eval mode as a comparison interface
 
-```
-QRDuelingNet architecture
-─────────────────────────────────────────────────────────────────────────
-  obs(18) → Linear(18→256)+LN+ReLU → Linear(256→256)+LN+ReLU
-                  ↙                              ↘
-         Value(256→128→51)           Advantage(256→128→3×51)
-                  ↘                              ↙
-            Q(s,a) = V(s) + A(s,a) − mean_a[A]
-            Output: [batch × 3 actions × 51 quantiles]
+<br/>
 
-CentralisedCritic (training only — discarded at execution)
-─────────────────────────────────────────────────────────────────────────
-  joint_state(16) → Linear(16→256)+LN+ReLU → Linear(256→128→1)
-  Output: V(s) — single scalar
-```
+**Network architectures:**
+
+<div align="center">
+
+| Module | Architecture |
+|:---|:---|
+| **QRDuelingNet** | `obs(18)` → `Linear(18→256)+LN+ReLU` → `Linear(256→256)+LN+ReLU` → **Value** `(256→128→51)` + **Advantage** `(256→128→3×51)` → `Q(s,a) = V(s) + A(s,a) − mean_a[A]` |
+| **CentralisedCritic** *(train only)* | `joint_state(16)` → `Linear(16→256)+LN+ReLU` → `Linear(256→128→1)` → `V(s)` scalar |
+
+</div>
 
 <br/><br/>
 
@@ -219,47 +227,47 @@ CentralisedCritic (training only — discarded at execution)
 <!--  TRAINING SEQUENCE                                                       -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:062518,100:0a3d28&height=52&text=🔁%20Training%20Sequence%20%26%20Decision%20Flow&fontSize=20&fontColor=6ee7b7&fontAlignY=65" width="100%"/>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=SEQUENCE%20DIAGRAM%20—%20message%20flow%20per%20time%20step&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="88%"/>
-<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Sequence_Diagram.svg?raw=true" alt="Sequence Diagram" width="88%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a3d28,100:062518&height=6&text=&fontSize=1" width="88%"/>
-</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:062518,100:0a3d28&height=54&text=🔁%20%20Training%20Sequence%20%26%20Decision%20Flow&fontSize=20&fontColor=6ee7b7&fontAlignY=65" width="100%"/>
 
 <br/>
 
 **Per time step (300 per episode):**
 
-```
-  1. Passenger  → Environment    : Press floor call button → hall[f] incremented
-  2. Environment → Agent         : Send observation (dim 18) — pos, queues, peer info
-  3. Agent       → self          : Select action via QR-DQN (argmax over mean quantiles)
-  4. Agent       → Environment   : Return action  [ UP | DOWN | IDLE ]
-  5. Environment → self          : Move elevator · serve passengers · compute reward
-  6. Agent       → self          : Store transition in PER buffer · train · soft update
-```
+| Step | From → To | Action |
+|:---:|:---|:---|
+| 1 | Passenger → Environment | Press floor call button → `hall[f]` incremented |
+| 2 | Environment → Agent | Send observation `(dim 18)` — position, queues, peer info |
+| 3 | Agent → self | Select action via QR-DQN `(argmax over mean quantiles)` |
+| 4 | Agent → Environment | Return action `[ UP \| DOWN \| IDLE ]` |
+| 5 | Environment → self | Move elevator · serve passengers · compute reward |
+| 6 | Agent → self | Store transition in PER buffer · train · soft-update target |
 
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=ACTIVITY%20DIAGRAM%20—%20complete%20lifecycle%20across%204%20swim%20lanes&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="88%"/>
-<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Activity_Diagram.svg?raw=true" alt="Activity Diagram" width="88%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a3d28,100:062518&height=6&text=&fontSize=1" width="88%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20SEQUENCE%20DIAGRAM%20—%20message%20flow%20per%20time%20step%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="90%"/>
+<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Sequence_Diagram.svg?raw=true" alt="Sequence Diagram" width="90%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a3d28,100:062518&height=6&text=%20&fontSize=1" width="90%"/>
 </div>
 
 <br/>
 
-**Four swim lanes:**
+**Four swim lanes — activity lifecycle:**
 
 | Lane | Actor | Key Activities |
 |:---|:---|:---|
 | 🔵 **Passenger** | Real-world user | Arrives at floor → presses call button |
 | 🟣 **Environment** | `MultiElevatorEnv` | Records hall call → generates obs → serves passengers → computes reward |
 | 🟢 **Elevator Agent** | `CTDEQRDQNAgent` | Receives obs(18) → selects action → stores in PER → trains actor + critic |
-| 🟡 **Administrator** | Training loop | Reviews metrics → evaluates composite score → saves best checkpoint → generates figures |
+| 🟡 **Administrator** | Training loop | Reviews metrics → evaluates composite score → saves best checkpoint |
+
+<br/>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20ACTIVITY%20DIAGRAM%20—%20complete%20lifecycle%20across%204%20swim%20lanes%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="90%"/>
+<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Activity_Diagram.svg?raw=true" alt="Activity Diagram" width="90%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a3d28,100:062518&height=6&text=%20&fontSize=1" width="90%"/>
+</div>
 
 <br/><br/>
 
@@ -267,14 +275,14 @@ CentralisedCritic (training only — discarded at execution)
 <!--  USE CASES                                                               -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0a00,100:3d1f00&height=52&text=🎭%20Use%20Cases&fontSize=20&fontColor=fdba74&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0a00,100:3d1f00&height=54&text=🎭%20%20Use%20Cases&fontSize=20&fontColor=fdba74&fontAlignY=65" width="100%"/>
 
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=USE%20CASE%20DIAGRAM&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="78%"/>
-<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Use_Case.svg?raw=true" alt="Use Case Diagram" width="78%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3d1f00,100:1a0a00&height=6&text=&fontSize=1" width="78%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20USE%20CASE%20DIAGRAM%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="80%"/>
+<img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/UML%20Diagrams/Multi_Elevator_Use_Case.svg?raw=true" alt="Use Case Diagram" width="80%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3d1f00,100:1a0a00&height=6&text=%20&fontSize=1" width="80%"/>
 </div>
 
 <br/>
@@ -285,7 +293,7 @@ CentralisedCritic (training only — discarded at execution)
 | 🤖 **Elevator Agent** | Dispatch Elevator Action · Serve Passengers at Floor · Learn from Experience |
 | 👨‍💼 **Administrator** | Monitor Training Logs · Evaluate System Performance → «extend» Save Best Checkpoint |
 
-**Include chain:** `Press Floor Call Button` → «include» `Dispatch Elevator Action` → «include» `Serve Passengers at Floor` → «include» `Board or Alight Elevator`
+> **Include chain:** `Press Floor Call Button` → «include» `Dispatch Elevator Action` → «include» `Serve Passengers at Floor` → «include» `Board or Alight Elevator`
 
 <br/><br/>
 
@@ -293,11 +301,11 @@ CentralisedCritic (training only — discarded at execution)
 <!--  ENVIRONMENT                                                             -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:001a22,100:003344&height=52&text=🏗️%20Environment&fontSize=20&fontColor=67e8f9&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:001a22,100:003344&height=54&text=🏗️%20%20Environment&fontSize=20&fontColor=67e8f9&fontAlignY=65" width="100%"/>
 
 <br/>
 
-### Building Configuration
+### 🏢 Building Configuration
 
 <div align="center">
 
@@ -313,7 +321,9 @@ CentralisedCritic (training only — discarded at execution)
 
 </div>
 
-### Traffic Modes
+<br/>
+
+### 🚦 Traffic Modes
 
 <div align="center">
 
@@ -325,7 +335,9 @@ CentralisedCritic (training only — discarded at execution)
 
 </div>
 
-### Observation Space — 18 Dimensions
+<br/>
+
+### 🔭 Observation Space — 18 Dimensions
 
 <div align="center">
 
@@ -339,17 +351,23 @@ CentralisedCritic (training only — discarded at execution)
 
 </div>
 
-### Step Sequence — One Clock Tick
+<br/>
 
-```
-  1. SERVE   → elevator clears all passengers on its current floor
-  2. MOVE    → execute action (UP / DOWN / IDLE), pay energy cost if moved
-  3. SPAWN   → Poisson(λ × weight[f]) new passengers added to every floor
-  4. RESP    → compute nearest elevator per floor; EMA-normalise responsibility
-  5. CLUSTER → check if any elevator moved toward a peer within 2 floors
-  6. IDLE    → check if stationary with no nearby calls → grant idle bonus
-  7. REWARD  → compute per-elevator decomposed reward, clip to [−20, +20]
-```
+### ⏱️ Step Sequence — One Clock Tick
+
+<div align="center">
+
+| # | Phase | Action |
+|:---:|:---|:---|
+| 1 | **SERVE** | Elevator clears all passengers on its current floor |
+| 2 | **MOVE** | Execute action `(UP / DOWN / IDLE)`, pay energy cost if moved |
+| 3 | **SPAWN** | `Poisson(λ × weight[f])` new passengers added to every floor |
+| 4 | **RESP** | Compute nearest elevator per floor; EMA-normalise responsibility |
+| 5 | **CLUSTER** | Check if any elevator moved toward a peer within 2 floors |
+| 6 | **IDLE** | Check if stationary with no nearby calls → grant idle bonus |
+| 7 | **REWARD** | Compute per-elevator decomposed reward, clip to `[−20, +20]` |
+
+</div>
 
 <br/><br/>
 
@@ -357,34 +375,30 @@ CentralisedCritic (training only — discarded at execution)
 <!--  REWARD DESIGN                                                           -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0020,100:3d0048&height=52&text=🎯%20Reward%20Design&fontSize=20&fontColor=f0abfc&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0020,100:3d0048&height=54&text=🎯%20%20Reward%20Design&fontSize=20&fontColor=f0abfc&fontAlignY=65" width="100%"/>
 
 <br/>
 
 Each elevator receives a **fully decomposed, strictly per-agent reward** — no shared terms, no free-rider problem.
 
-```
-  reward_i  =  +8.0  ×  passengers_served_i
-               −3.0  ×  responsibility_norm_i      ← EMA-normalised nearest-floor queue load
-               −0.5  ×  move_cost_i                ← 1 per floor moved (energy)
-               +0.3  ×  idle_bonus_i               ← bonus: stationary + no nearby calls
-               −2.5  ×  approach_cluster_i         ← penalty: moved toward peer ≤2 floors
-
-  Clipped to [−20, +20]
-```
+<br/>
 
 <div align="center">
 
-| Term | Weight | Purpose |
+| Term | Coefficient | Purpose |
 |:---|:---:|:---|
-| Serve reward | `+8.0` | Dominant signal for the primary task |
-| Responsibility penalty | `−3.0` | Drives elevators toward floors they're nearest to |
-| Energy penalty | `−0.5` | Gentle discouragement of pointless movement |
-| Idle bonus | `+0.3` | Rewards strategic waiting at uncrowded positions |
-| Cluster penalty | `−2.5` | Discourages bunching — strictly local, no free-rider gradient *(raised from 1.5 in v10.3)* |
+| `passengers_served_i` | **`+8.0`** | Dominant signal — reward the primary task |
+| `responsibility_norm_i` | **`−3.0`** | EMA-normalised nearest-floor queue load; drives elevators toward floors they own |
+| `move_cost_i` | **`−0.5`** | 1 per floor moved; gentle discouragement of pointless movement |
+| `idle_bonus_i` | **`+0.3`** | Stationary + no nearby calls → reward strategic waiting |
+| `approach_cluster_i` | **`−2.5`** | Moved toward peer ≤2 floors → strictly local cluster penalty *(raised from 1.5 in v10.3)* |
 
 </div>
 
+<br/>
+
+> **Reward formula:** `reward_i = +8.0×served − 3.0×resp_norm − 0.5×move_cost + 0.3×idle − 2.5×cluster` &nbsp;&nbsp; clipped to `[−20, +20]`
+>
 > **Responsibility is EMA-normalised:** `resp_ema = 0.95 × resp_ema + 0.05 × max_resp` — prevents a sudden surge from creating a massive one-step gradient spike.
 
 <br/><br/>
@@ -393,7 +407,7 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
 <!--  BASELINES                                                               -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f1318,100:1e2730&height=52&text=📏%20Baseline%20Policies&fontSize=20&fontColor=94a3b8&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f1318,100:1e2730&height=54&text=📏%20%20Baseline%20Policies&fontSize=20&fontColor=94a3b8&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -404,13 +418,13 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
 | **Nearest Car** | Greedy — go to closest pending call | 9.679 | 409.8 | 98.5% |
 | **SCAN / LOOK** | Sweep up then down, reverse on empty half | 1.415 | 899.6 | 98.5% |
 | **Sectoring** | Each elevator owns a fixed floor zone | 0.854 | 486.1 | 28.5% |
-| **ETA-Dispatch** | Assign each call to min estimated-travel-time elevator | 0.673 | 472.7 | 10.2% |
+| **ETA-Dispatch** ⭐ *primary benchmark* | Assign each call to min estimated-travel-time elevator | 0.673 | 472.7 | 10.2% |
 
 </div>
 
 <br/>
 
-> **ETA-Dispatch** is the primary benchmark. For each unassigned call it computes travel time for every elevator (direct if idle, via current target if busy) and assigns the minimum. Most sophisticated classical method — the RL agent's entire training goal is to beat it jointly on *all* metrics.
+> **Why ETA-Dispatch is the target:** For each unassigned call it computes travel time for every elevator (direct if idle, via current target if busy) and assigns the minimum. It is the most sophisticated classical method — and the RL agent's entire training goal is to beat it jointly on *all four* metrics simultaneously.
 
 <br/><br/>
 
@@ -418,28 +432,26 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
 <!--  TRAINING PIPELINE                                                       -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:001828,100:002d48&height=52&text=🔄%20Training%20Pipeline&fontSize=20&fontColor=38bdf8&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:001828,100:002d48&height=54&text=🔄%20%20Training%20Pipeline&fontSize=20&fontColor=38bdf8&fontAlignY=65" width="100%"/>
 
 <br/>
 
-### Phase 0 — Warm Start (100 episodes, no gradient updates)
+### Phase 0 — Warm Start
 
-```
-  100 episodes × 300 steps × 3 elevators = 90,000 buffer entries
+> **100 episodes × 300 steps × 3 elevators = 90,000 buffer entries** &nbsp;·&nbsp; No gradient updates
+> 50% ETA-Dispatch actions + 50% random actions — seeds the buffer with competent + exploratory experience.
 
-  50% ETA-Dispatch actions  +  50% random actions
-  Purpose: seed buffer with competent + exploratory experience
-```
+<br/>
 
-### Phase 1 — Main Training (3,500 episodes)
+### Phase 1 — Main Training &nbsp; `3,500 episodes · 1,050,000 gradient updates`
 
-**Total gradient updates: 3,500 × 300 = `1,050,000`**
+<br/>
 
-#### Learning Rate Schedule
+**Learning Rate Schedule**
 
 <div align="center">
 
-| Episodes | LR | Purpose |
+| Episodes | Learning Rate | Phase |
 |:---|:---:|:---|
 | Ep 1 – 799 | `1e-3` | Fast initial learning |
 | Ep 800 – 1199 | `5e-4` | Consolidation |
@@ -449,38 +461,46 @@ Each elevator receives a **fully decomposed, strictly per-agent reward** — no 
 
 </div>
 
-#### Three Annealing Schedules Running in Parallel
+<br/>
+
+**Three Annealing Schedules — running in parallel**
 
 <div align="center">
 
-| Schedule | Start | End | Notes |
+| Schedule | Start | End | Behaviour |
 |:---|:---:|:---:|:---|
-| ε (exploration) | `0.25` | `0.05` | Anneals ep 1→1000, then flat |
-| critic_α (blend) | `0.00` | `0.25` | Ramps ep 1→400, then flat |
-| β (IS correction) | `0.40` | `1.00` | Linear across all 3,500 episodes |
+| ε — exploration | `0.25` | `0.05` | Anneals ep 1→1000, flat thereafter |
+| critic_α — blend | `0.00` | `0.25` | Ramps ep 1→400, flat thereafter |
+| β — IS correction | `0.40` | `1.00` | Linear across all 3,500 episodes |
 
 </div>
 
-#### Composite Checkpoint Score *(FIX-1)*
+<br/>
 
-```python
-score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
-      + 0.4 × (energy      / eta_energy)    # energy — second
-      + 0.3 × (cluster_rate / 0.15)         # cluster — third (soft target 15%)
-
-# Lower = better.
-# score = 1.70  →  equal to ETA on all three metrics simultaneously.
-# Best checkpoint: ep 2075  →  score 1.347  →  wait 0.51, energy 403.7, cluster 12.2%
-```
-
-#### Evaluation Cadence *(FIX-4)*
+**Composite Checkpoint Score** *(FIX-1 — lower is better)*
 
 <div align="center">
 
-| Episode Range | Frequency | Episodes per Eval |
+| Component | Weight | Normalised By |
+|:---|:---:|:---|
+| Avg Wait | `1.0 ×` | `eta_wait` |
+| Energy | `0.4 ×` | `eta_energy` |
+| Cluster Rate | `0.3 ×` | `0.15` *(soft target)* |
+
+> `score = 1.70` → equal to ETA on all metrics &nbsp;·&nbsp; **Best checkpoint: ep 2,075 → score `1.347`** → wait `0.51`, energy `403.7`, cluster `12.2%`
+
+</div>
+
+<br/>
+
+**Evaluation Cadence** *(FIX-4)*
+
+<div align="center">
+
+| Episode Range | Eval Frequency | Episodes per Eval |
 |:---|:---:|:---:|
-| Ep 1 – 1499 | Every 50 eps | 40 |
-| Ep 1500 – 3500 | Every 25 eps | 50 |
+| Ep 1 – 1,499 | Every 50 eps | 40 |
+| Ep 1,500 – 3,500 | Every 25 eps | 50 |
 
 </div>
 
@@ -490,15 +510,17 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 <!--  STRESS TESTS                                                            -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0400,100:3d0e00&height=52&text=🔥%20Stress%20Test%20Results&fontSize=20&fontColor=fca5a5&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0400,100:3d0e00&height=54&text=🔥%20%20Stress%20Test%20Results&fontSize=20&fontColor=fca5a5&fontAlignY=65" width="100%"/>
 
 <br/>
 
-> Tested on **out-of-distribution** arrival rates — never seen during training (λ capped at 0.35 during training).
+> Tested on **out-of-distribution** arrival rates — never seen during training. Training cap: λ = 0.35.
+
+<br/>
 
 <div align="center">
 
-| Scenario | λ | Served | Energy | Avg Wait | vs In-Dist | Cluster% | Spread |
+| Scenario | λ | Served/ep | Energy | Avg Wait | vs In-Dist | Cluster% | Spread |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Rush Hour** | `0.35` | 1,055 | 563 | 0.78 | 1.16× | 12.6% | 0.296 |
 | **Peak Load** | `0.55` | 1,669 | 705 | 1.31 | 1.94× | 17.4% | 0.278 |
@@ -508,7 +530,7 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 
 <br/>
 
-> **At λ = 0.85** — 2.4× the training max — the policy still maintains structured coverage (spread = 0.266, cluster = 20%) and serves **2,530 passengers/episode**. Graceful degradation, not catastrophic failure.
+> **At λ = 0.85** — **2.4× the training max** — the policy still maintains structured coverage (spread = 0.266, cluster = 20%) and serves **2,530 passengers/episode**. Graceful degradation, not catastrophic failure.
 
 <br/><br/>
 
@@ -516,35 +538,38 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 <!--  RESULT FIGURES                                                          -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1a00,100:1e3800&height=52&text=📊%20Result%20Figures&fontSize=20&fontColor=a3e635&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1a00,100:1e3800&height=54&text=📊%20%20Result%20Figures&fontSize=20&fontColor=a3e635&fontAlignY=65" width="100%"/>
 
 <br/>
 
-> All 8 figures generated at **400 DPI** (PNG + PDF) on Kaggle NVIDIA Tesla T4.
-> Full set: [`Results_Diagrams/`](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/tree/main/Results_Diagrams)
+> All 8 figures generated at **400 DPI** (PNG + PDF) on Kaggle NVIDIA Tesla T4 · [`Results_Diagrams/`](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/tree/main/Results_Diagrams)
 
 <br/>
 
 ### Figure 1 — Training Convergence
 
+> Avg wait per eval episode plotted against all 4 baselines, with LR step-down points as vertical lines. The smoothed curve crosses below ETA-Dispatch (0.673) around **episode 150** and continues improving through all four LR stages.
+
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=Training%20Convergence&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="92%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20Training%20Convergence%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="92%"/>
 <img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Training_Convergence.png?raw=true" alt="Training Convergence" width="92%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=6&text=&fontSize=1" width="92%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=6&text=%20&fontSize=1" width="92%"/>
 </div>
 
-> Avg wait per eval episode vs all 4 baselines. LR step-down points shown as vertical lines. The smoothed curve crosses below ETA-Dispatch (0.673) around **episode 150** and continues improving through all four LR stages. Best composite checkpoint captured at **ep 2,075** (wait = 0.51, score = 1.347).
+> **Best composite checkpoint captured at ep 2,075** → wait = 0.51, score = 1.347.
 
 <br/>
 
-### Figures 2 & 3 — Composite Score · Wait Time
+### Figures 2 & 3 — Checkpoint Score · Wait Time Comparison
+
+> The composite score (left) tracks joint quality across all three metrics. The wait-time bar chart (right) shows the final ranking of all methods after 60 evaluation episodes.
 
 <div align="center">
 
-| | |
+| Composite Checkpoint Score | Avg Wait Time |
 |:---:|:---:|
-| <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=36&text=Composite%20Checkpoint%20Score&fontSize=12&fontColor=94a3b8&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Composite_Checkpoint.png?raw=true" alt="Composite Checkpoint Score" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=&fontSize=1" width="100%"/> | <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=36&text=Avg%20Wait%20Time&fontSize=12&fontColor=94a3b8&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Avg_Wait_Time.png?raw=true" alt="Average Wait Time" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=&fontSize=1" width="100%"/> |
-| Reference line at **1.70** = equal to ETA. Best checkpoint (ep 2,075, score = **1.347**) sits 19% below. | QR-DQN CTDE: **0.492** — **27% below** ETA-Dispatch and **94.9% below** Nearest Car. |
+| <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=36&text=◈%20%20Composite%20Score%20%20◈&fontSize=12&fontColor=64748b&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Composite_Checkpoint.png?raw=true" alt="Composite Checkpoint Score" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=%20&fontSize=1" width="100%"/> | <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=36&text=◈%20%20Avg%20Wait%20Time%20%20◈&fontSize=12&fontColor=64748b&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Avg_Wait_Time.png?raw=true" alt="Average Wait Time" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=%20&fontSize=1" width="100%"/> |
+| Reference at **1.70** = equal to ETA. Best ep 2,075 (score **1.347**) sits 19% below. | **0.492** — **27% below** ETA and **94.9% below** Nearest Car. |
 
 </div>
 
@@ -552,26 +577,28 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 
 ### Figure 4 — Training Dynamics (Three-Panel)
 
+> Three metrics evolve together across training: wait time (top), energy (middle), and cluster rate (bottom). Reading them together shows how the policy balanced the three-way tradeoff.
+
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=40&text=Training%20Dynamics&fontSize=13&fontColor=94a3b8&fontAlignY=65" width="92%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=42&text=◈%20%20Training%20Dynamics%20—%20Wait%20%2F%20Energy%20%2F%20Cluster%20%20◈&fontSize=13&fontColor=64748b&fontAlignY=65" width="92%"/>
 <img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Training_Dynamics.png?raw=true" alt="Training Dynamics" width="92%"/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=6&text=&fontSize=1" width="92%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=6&text=%20&fontSize=1" width="92%"/>
 </div>
 
-> **Panel 1 (Wait):** 0.78 (ep 50) → below ETA by ep 150 → 0.49 at best checkpoint.
-> **Panel 2 (Energy):** Gradually falls 520 → 427 as the policy learns smarter positioning.
-> **Panel 3 (Cluster):** Drops sharply 52% → ~10% by ep 1,500. Stronger penalty (FIX-3: 1.5→2.5) prevents the v10.2 oscillation in the final 500 episodes.
+> **Wait** `0.78 → 0.49` · **Energy** `520 → 427` · **Cluster** `52% → 10%` — all improving monotonically across 3,500 episodes.
 
 <br/>
 
-### Figures 5 & 6 — Energy · Spatial Distribution
+### Figures 5 & 6 — Energy Consumption · Spatial Distribution
+
+> Energy (left) confirms that fewer motor-steps don't come at the cost of higher wait. Spatial spread (right) reveals emergent self-organisation: elevators learned to spread without any explicit rule telling them to.
 
 <div align="center">
 
-| | |
+| Energy Consumption | Cluster Rate & Spread Index |
 |:---:|:---:|
-| <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=36&text=Energy%20Consumption&fontSize=12&fontColor=94a3b8&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Energy_Consumption.png?raw=true" alt="Energy Consumption" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=&fontSize=1" width="100%"/> | <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=36&text=Elevator%20Spatial%20Distribution&fontSize=12&fontColor=94a3b8&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Elevator_Spatial_Distribution.png?raw=true" alt="Spatial Distribution" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=&fontSize=1" width="100%"/> |
-| QR-DQN uses **427.2** motor-steps vs ETA's **472.7** — **9.6% fewer movements**. SCAN/LOOK worst at 899.6. | Spread rises from near-zero to **0.306** — exceeding ETA (0.297). Emergent self-organisation. |
+| <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=36&text=◈%20%20Energy%20Consumption%20%20◈&fontSize=12&fontColor=64748b&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Energy_Consumption.png?raw=true" alt="Energy Consumption" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=%20&fontSize=1" width="100%"/> | <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=36&text=◈%20%20Spatial%20Distribution%20%20◈&fontSize=12&fontColor=64748b&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Elevator_Spatial_Distribution.png?raw=true" alt="Spatial Distribution" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=%20&fontSize=1" width="100%"/> |
+| **427.2** motor-steps vs ETA's **472.7** — **9.6% fewer** movements. SCAN/LOOK worst at 899.6. | Spread rises near-zero → **0.306**, exceeding ETA (0.297). Pure reward-driven self-organisation. |
 
 </div>
 
@@ -579,12 +606,14 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 
 ### Figures 7 & 8 — Stress Tests · Actor Loss
 
+> OOD generalisation (left) shows how the policy degrades gracefully under extreme demand. The loss curve (right) confirms stable convergence — no divergence despite 1,050,000 updates.
+
 <div align="center">
 
-| | |
+| Stress Test Generalisation | Actor Loss Trajectory |
 |:---:|:---:|
-| <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=36&text=Stress%20Test%20Generalisation&fontSize=12&fontColor=94a3b8&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Stress_Tests.png?raw=true" alt="Stress Tests" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=&fontSize=1" width="100%"/> | <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e293b&height=36&text=Actor%20Loss%20Trajectory&fontSize=12&fontColor=94a3b8&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Actor_Loss.png?raw=true" alt="Actor Loss" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=&fontSize=1" width="100%"/> |
-| At **λ = 0.85** (2.4× training max), wait rises to 2.02 but structure holds. No catastrophic collapse. | Falls from **~1.10** (ep 50) to **~0.63** (ep 3,500) with no divergence. Each LR step causes a brief expected uptick. |
+| <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=36&text=◈%20%20Stress%20Test%20Results%20%20◈&fontSize=12&fontColor=64748b&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Stress_Tests.png?raw=true" alt="Stress Tests" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=%20&fontSize=1" width="100%"/> | <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0c1220,100:18243a&height=36&text=◈%20%20Actor%20Loss%20%20◈&fontSize=12&fontColor=64748b&fontAlignY=68" width="100%"/><img src="https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/blob/main/Results_Diagrams/Actor_Loss.png?raw=true" alt="Actor Loss" width="100%"/><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3800,100:0d1a00&height=5&text=%20&fontSize=1" width="100%"/> |
+| **λ = 0.85** (2.4× training max): wait rises to 2.02 but spread holds. No catastrophic collapse. | **~1.10 → ~0.63** across 3,500 ep with no divergence. Each LR step-down causes a brief expected uptick. |
 
 </div>
 
@@ -594,7 +623,7 @@ score = 1.0 × (avg_wait    / eta_wait)      # wait   — highest priority
 <!--  PROJECT STRUCTURE                                                       -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f1318,100:1a2030&height=52&text=📁%20Project%20Structure&fontSize=20&fontColor=cbd5e1&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f1318,100:1a2030&height=54&text=📁%20%20Project%20Structure&fontSize=20&fontColor=cbd5e1&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -628,18 +657,20 @@ multi-elevator-ctde-qrdqn-dispatch/
 <!--  HOW TO RUN                                                              -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:002210,100:003d1e&height=52&text=🚀%20How%20to%20Run&fontSize=20&fontColor=4ade80&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:002210,100:003d1e&height=54&text=🚀%20%20How%20to%20Run&fontSize=20&fontColor=4ade80&fontAlignY=65" width="100%"/>
 
 <br/>
 
 ### ☁️ Option 1 — Kaggle *(Recommended — Free T4 GPU)*
 
-```
-1. Open: Multi_Elevator_CTDE.ipynb  (link in badge above)
-2. Import to your Kaggle account
-3. Settings → Accelerator → GPU T4
-4. Run All — full training completes in approximately 2–3 hours
-```
+| Step | Action |
+|:---:|:---|
+| 1 | Open `Multi_Elevator_CTDE.ipynb` via the badge at the top |
+| 2 | Import to your Kaggle account |
+| 3 | Settings → Accelerator → **GPU T4** |
+| 4 | **Run All** — full training completes in ~2–3 hours |
+
+<br/>
 
 ### 💻 Option 2 — Local / Google Colab
 
@@ -650,7 +681,7 @@ pip install torch numpy matplotlib
 jupyter notebook Multi_Elevator_CTDE.ipynb
 ```
 
-### 🧪 Quick Smoke Test (~20 min on CPU)
+### 🧪 Quick Smoke Test &nbsp;*(~20 min on CPU)*
 
 ```python
 # Edit the entry point at the bottom of the notebook:
@@ -663,7 +694,7 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 <!--  DEPENDENCIES                                                            -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1000,100:352000&height=52&text=📦%20Dependencies&fontSize=20&fontColor=fcd34d&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1000,100:352000&height=54&text=📦%20%20Dependencies&fontSize=20&fontColor=fcd34d&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -688,7 +719,7 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 <!--  DESIGN DECISIONS                                                        -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:150020,100:2a0040&height=52&text=🔬%20Design%20Decisions%20—%20v10.3%20Fixes&fontSize=20&fontColor=d8b4fe&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:150020,100:2a0040&height=54&text=🔬%20%20Design%20Decisions%20—%20v10.3%20Fixes&fontSize=20&fontColor=d8b4fe&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -713,7 +744,7 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 
 <br/>
 
-**Problem:** v10.2 actor loss was still at 0.498 and falling at ep 2500. Best policy was still emerging.
+**Problem:** v10.2 actor loss was still at 0.498 and falling at ep 3000. The best policy was still emerging.
 
 **Fix:** 500 additional episodes at `LR = 2e-5`. Gives the jointly-efficient behaviour at ep 2200–2400 time to consolidate.
 
@@ -752,7 +783,7 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,40:0a3d62,100:020817&height=130&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,40:0a3d62,100:020817&height=140&section=footer" width="100%"/>
 
 **Built from scratch &nbsp;·&nbsp; PyTorch 2.9 &nbsp;·&nbsp; NVIDIA Tesla T4 &nbsp;·&nbsp; 1,050,000 gradient updates**
 
