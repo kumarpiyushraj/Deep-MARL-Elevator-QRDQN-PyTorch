@@ -226,7 +226,7 @@ The class diagram shows the **complete object model** — every class, its attri
 <!--  TRAINING SEQUENCE                                                       -->
 <!---------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:062518,100:0a3d28&height=54&text=🔁%20%20Training%20Sequence%20%26%20Decision%20Flow&fontSize=20&fontColor=6ee7b7&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:062518,100:0a3d28&height=54&text=🔁%20%20Training%20Sequence%20%26%20Decision%20Flow&fontColor=6ee7b7&fontAlignY=65" width="100%"/>
 
 <br/>
 
