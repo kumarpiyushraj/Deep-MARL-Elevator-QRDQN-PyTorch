@@ -801,8 +801,8 @@ multi-elevator-ctde-qrdqn-dispatch/
 ### 💻 Option 2 — Local / Google Colab
 
 ```bash
-git clone https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch.git
-cd multi-elevator-ctde-qrdqn-dispatch
+git clone https://github.com/kumarpiyushraj/Deep-MARL-Elevator-QRDQN-PyTorch.git
+cd Deep-MARL-Elevator-QRDQN-PyTorch
 pip install torch numpy matplotlib
 jupyter notebook Multi_Elevator_CTDE.ipynb
 ```
