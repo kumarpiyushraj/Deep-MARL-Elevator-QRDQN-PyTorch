@@ -911,8 +911,6 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,40:0a3d62,100:020817&height=160&section=footer" width="100%"/>
-
 **Built from scratch &nbsp;·&nbsp; PyTorch 2.9 &nbsp;·&nbsp; NVIDIA Tesla T4 &nbsp;·&nbsp; 1,050,000 gradient updates**
 
 <br/>
@@ -922,5 +920,5 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 <br/>
 
 *© 2026 Kumar Piyush Raj &nbsp;·&nbsp; [GitHub @kumarpiyushraj](https://github.com/kumarpiyushraj)*
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,40:0a3d62,100:020817&height=160&section=footer" width="100%"/>
 </div>
