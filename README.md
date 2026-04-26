@@ -919,7 +919,7 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 
 <br/>
 
-[![GitHub Issues](https://img.shields.io/badge/Issues-Report%20Bug-red?style=for-the-badge&logo=github)](https://github.com/kumarpiyushraj/Deep-MARL-Elevator-QRDQN-PyTorch/issues)&nbsp;
+[![GitHub Issues](https://img.shields.io/badge/Issues-Report%20Bug-red?style=for-the-badge&logo=github)](https://github.com/kumarpiyushraj/Deep-MARL-Elevator-QRDQN-PyTorch/issues/new)&nbsp;
 [![GitHub Discussions](https://img.shields.io/badge/Discussions-Ask%20Question-blue?style=for-the-badge&logo=github)](https://github.com/kumarpiyushraj/Deep-MARL-Elevator-QRDQN-PyTorch/discussions)&nbsp;
 [![Email](https://img.shields.io/badge/Email-Contact%20Developer-green?style=for-the-badge&logo=gmail)](mailto:kmpiyushraj@gmail.com)
 
@@ -937,7 +937,7 @@ run_training(n_elevators=3, floors=10, episodes=500, steps_per_ep=300, seeds=[42
 
 <br/>
 
-[![Star this repo](https://img.shields.io/github/stars/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch?style=for-the-badge&logo=github&color=fbbf24&labelColor=0d1117&label=Star%20this%20repo)](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch)
+[![Star this repo](https://img.shields.io/github/stars/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch?style=for-the-badge&logo=github&color=fbbf24&labelColor=0d1117&label=Star%20this%20repo)](https://github.com/kumarpiyushraj/multi-elevator-ctde-qrdqn-dispatch/stargazers)
 
 <br/>
 
